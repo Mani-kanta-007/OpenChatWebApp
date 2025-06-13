@@ -1,0 +1,100 @@
+ *{
+    margin: 0% ;
+    padding: 0% ;
+}
+body{
+    background: #d8d8e3;
+    background: radial-gradient(circle, rgba(216, 216, 227, 1) 0%, rgb(47, 13, 160) 100%);
+}
+
+#MessageUL {
+    height: 100%; /* Or any height you prefer, e.g., 80vh for viewport height */
+    overflow-y: auto; /* Adds a vertical scrollbar when content overflows */
+    /* Optional: Add some padding for better aesthetics */
+    padding: 10px;
+    border: 1px solid #ccc; /* Just for visualization */
+    list-style: none; /* Removes default bullet points if you want */
+}
+
+li{
+    overflow-y: auto;
+  list-style-type: none;
+}
+
+#titlechat{
+    color: black;
+    margin-top: 1px;
+
+}
+.AppName {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 2.8rem;
+    
+
+}
+.container{
+    width: 100vw;
+    display: flex;
+    flex-direction : column ;
+    align-items : center ;
+    gap : 5px ;
+}
+.MessageList{
+    background-color :#e7e7f5;
+    height : 40rem ;
+    width : 75% ;
+    color : white ;
+    padding : 2px ;
+}
+.typeMessage{
+    display : flex ;
+    gap : 2px ;
+    justify-content : center ;
+    align-items : center ;
+    flex-direction : column ;
+    width : 50% ;
+}
+.UserName {
+    width: 100%;
+}
+#SenderName{
+    border : 1px solid black ;
+    border-radius : 5px ;
+    height : 2rem ;
+    width : 90%;
+}
+#nameBtn {
+    border : 1px solid black ;
+    border-radius : 5px ;
+    color: white;
+    height : 2rem ;
+    width: 9%;
+    background: rgb(47, 13, 160) ;
+}
+
+.SendMessage{
+    width: 100%;
+}
+#SenderMessage{
+    border-radius : 5px ;
+    border : 1px solid black ;
+    width : 90% ;
+    height : 1.9rem ;
+}
+#SendMessage{
+    color: #d8d8e3;
+    border : 1px solid black ;
+    height : 1.9rem ;
+    width : 9% ;
+    background-color : green ;
+    border-radius : 5px ;
+}
+
+
+h3{
+    color: rgba(0, 0, 0, 0.871);
+    margin-left: 2px;
+    padding: 5px;
+}

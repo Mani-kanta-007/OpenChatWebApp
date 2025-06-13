@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OpenChat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="chatlogo%20Background%20Removed.png">
+</head>
+<body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.1/stomp.min.js"></script>
+
+
+<div class = 'container' >
+    <div class = 'AppName'>
+        <h1 id="titlechat">Chat Web-Application</h1>
+    </div>
+
+
+
+    <div class = 'MessageList' id = 'MessageBox'>
+        <ul  id="MessagesUL" >
+
+        </ul>
+    </div>
+
+    <div class = 'typeMessage'>
+        <div class = 'UserName'>
+            <input type="text" id="SenderName" placeholder="Type UserName Here....">
+            <button  id='nameBtn' >Fix-Name</button>
+        </div>
+        <div class ="SendMessage">
+            <input type="text" id="SenderMessage"  placeholder="Type Message Here....">
+            <button  id='SendMessage' >Send</button>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="./script.js"></script>
+
+</body>
+</html>

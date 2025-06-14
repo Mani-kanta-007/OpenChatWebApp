@@ -1,7 +1,32 @@
 var stompClient = null ;
 var username = null ;
-var colors = ['#D2691E' , '#DC143C' , '#7FFF00' ,'#00FFFF' , '#8A2BE2' , '#1ABC9C'] ;
+var colors = ['#D2691E' , '#DC143C' , '##00bfff' ,'#00FFFF' , '##ff00ea' , '#1ABC9C'] ;
 var userColor = '' ;
+
+var input = document.getElementById("SenderMessage");
+var inputName = document.getElementById("SenderName");
+
+// Execute a function when the user presses a key on the keyboard
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("SendMessage").click();
+  }
+});
+
+inputName.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("nameBtn").click();
+  }
+});
+
 function getSenderColor() {
     return colors[getRandomIntInclusive( 0 , colors.length)];
 }
